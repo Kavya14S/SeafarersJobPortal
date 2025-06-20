@@ -1,0 +1,8 @@
+@import "tailwindcss";
+.bgg {
+    background-image: url("https://ik.imagekit.io/9rldi0s2f8/brill/boat-lake-balaton-against-sky-dusk_1048944-8140412-Picsart-AiImageEnhancer.png?updatedAt=1750171240947");
+    background-size: cover;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+}

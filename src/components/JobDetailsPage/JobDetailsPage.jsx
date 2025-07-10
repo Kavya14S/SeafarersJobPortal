@@ -14,7 +14,7 @@ const JobDetailsPage = () => {
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-2xl font-bold">Job not found</h1>
-          <Link to="/LandingPage" className="text-blue-600 hover:underline">
+          <Link to="/" className="text-blue-600 hover:underline">
             Back to all jobs
           </Link>
         </div>
@@ -27,7 +27,7 @@ const JobDetailsPage = () => {
       <div className="max-w-4xl mx-auto px-4">
         {/* Back to Jobs Link */}
         <Link 
-          to="/LandingPage" 
+          to="/" 
           className="flex items-center text-blue-600 hover:underline mb-6"
         >
           <svg className="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -76,9 +76,15 @@ const JobDetailsPage = () => {
             </div>
 
             {/* Quick Apply Button */}
-            <button className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition font-medium">
-              Apply Now
-            </button>
+            
+            <Link 
+  to={`/jobs/${job.id}/apply`}
+  className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition font-medium text-center block"
+>
+  Apply Now
+</Link>
+            
+            
           </div>
         </div>
 

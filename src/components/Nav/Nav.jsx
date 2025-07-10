@@ -28,16 +28,19 @@ const Nav = () => {
                     </div>
                 </div>
                 <div className="hidden md:flex text-white flex-col justify-center items-center md:flex-row md:justify-end gap-4 space-y-2 md:space-y-0 p-2.5 md:p-0" id="content">
-                    <Link to="/LandingPage" onClick={handleCross}>
+                    <Link to="/" onClick={handleCross}>
                     <p className="font-[Poppins] py-2 px-4 text-center">HOME</p>
                     </Link>
                     <Link to="/BrowseJobsPage" onClick={handleCross}>
                     <p className="font-[Poppins] py-2 px-4 text-center">JOBS</p>
                     </Link>
+                    <Link to="/RemoteTrainingPage" onClick={handleCross}>
+                    <p className="font-[Poppins] py-2 px-4 text-center">TRAINING</p>
+                    </Link>
                     <Link to="/ContactPage" onClick={handleCross}>
                     <p className="font-[Poppins] py-2 px-4 text-center">CONTACT</p>
                     </Link>
-                    <Link to="/" onClick={handleCross}>
+                    <Link to="/Signin" onClick={handleCross}>
                     <p className="bg-red-500 text-center my-2 rounded-md px-4 py-1 align-middle font-[Poppins]">SIGN IN</p>
                     </Link>
 

@@ -9,6 +9,8 @@ import JobDetailsPage from "./components/JobDetailsPage/JobDetailsPage";
 import BrowseJobsPage from "./components/BrowseJobsPage/BrowseJobsPage";
 import ContactPage from "./components/ContactPage/ContactPage";
 import Nav from "./components/Nav/Nav";
+import ApplyPage from "./components/Applypage/ApplyPage";
+import RemoteTrainingPage from "./components/RemoteTrainingPage/RemoteTrainingPage";
 const AppLayout = () => {
     return (
         <>
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Signin />
+                element: <LandingPage />
             },
             {
                 path: "/SeafarerRegistration",
@@ -38,8 +40,8 @@ const router = createBrowserRouter([
                 element: <ResultsPage />
             },
             {
-                path: "/LandingPage",
-                element: <LandingPage />
+                path: "/Signin",
+                element: <Signin />
             },
             {
                 path: "/jobs/:id",
@@ -52,8 +54,16 @@ const router = createBrowserRouter([
             {
                 path: "/ContactPage",
                 element: <ContactPage />
+            },
+            {
+                path: "/jobs/:id/apply",
+                element: <ApplyPage />
+            },
+            {
+                path: "/RemoteTrainingPage",
+                element: <RemoteTrainingPage />
             }
-            
+           
         ]
     }
 ]);
